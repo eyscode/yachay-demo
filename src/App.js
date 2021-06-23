@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from "react-router-dom";
+import Login from "./Login";
+import PrivateRoute from "./PrivateRoute";
+import 'bootstrap/dist/css/bootstrap.css';
+import '@popperjs/core';
+import 'bootstrap/dist/js/bootstrap.bundle.min';
+import Main from "./Main";
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Switch>
+        <Route path="/login">
+          <Login/>
+        </Route>
+        <PrivateRoute path="/">
+          <Main/>
+        </PrivateRoute>
+        {/*    <About/>*/}
+        {/*</Route>*/}
+        {/*<Route path="/users">*/}
+        {/*    <Users/>*/}
+        {/*</Route>*/}
+        {/*<Route path="/">*/}
+        {/*    <Home/>*/}
+        {/*</Route>*/}
+      </Switch>
+    </Router>
   );
 }
-
-export default App;
