@@ -4,6 +4,8 @@ import Jobs from "./Jobs";
 import Skills from "./Skills";
 import appStore from "./AppStore";
 import {useHistory} from "react-router-dom";
+import Positions from "./Positions";
+import Careers from "./Careers";
 
 export default function Main() {
   let {path, url} = useRouteMatch();
@@ -45,7 +47,7 @@ export default function Main() {
           <div className="d-flex align-items-center">
             <div className="flex-shrink-0 dropdown">
               <a href="#" className="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2"
-                 data-bs-toggle="dropdown" aria-expanded="false">
+                 data-bs-toggle="dropdown" aria-expanded="false" style={{color: "white"}}>
                 <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" className="rounded-circle"/>
               </a>
               <ul className="dropdown-menu text-small shadow dropdown-menu-end" aria-labelledby="dropdownUser2">
@@ -196,14 +198,14 @@ export default function Main() {
               <Route path={`${path}job-offers`}>
                 <Jobs/>
               </Route>
-              <Route path={`${path}hard-to-fill-jobs`}>
-                <h3>Trabajos por cubrir</h3>
-              </Route>
               <Route path={`${path}top-skills`}>
                 <Skills/>
               </Route>
+              <Route path={`${path}hard-to-fill-jobs`}>
+                <Positions/>
+              </Route>
               <Route path={`${path}careers`}>
-                <h3>Carreras</h3>
+                <Careers/>
               </Route>
             </Switch>
           </main>

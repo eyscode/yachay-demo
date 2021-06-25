@@ -21,14 +21,6 @@ export default function App() {
         <PrivateRoute path="">
           <Main/>
         </PrivateRoute>
-        {/*    <About/>*/}
-        {/*</Route>*/}
-        {/*<Route path="/users">*/}
-        {/*    <Users/>*/}
-        {/*</Route>*/}
-        {/*<Route path="/">*/}
-        {/*    <Home/>*/}
-        {/*</Route>*/}
       </Switch>
     </Router>
   );

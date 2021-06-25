@@ -1,6 +1,6 @@
 import './Skills.css';
 
-export default function Jobs() {
+export default function Skills() {
   return (
     <div>
       <div className="title">
@@ -145,14 +145,14 @@ export default function Jobs() {
         <h4>Skills mas solicitados</h4>
         <br/>
         <div className="row justify-content-md-center">
-          <div className="col-md-3">
+          <div className="col-md-4 offset-1">
             <p>1. Cloud Computing</p>
             <p>2. Análisis estadístico</p>
             <p>3. Desarrollo web</p>
             <p>4. Diseño de Interfaces de usuario</p>
             <p>5. Seguridad de la información</p>
           </div>
-          <div className="col-md-3">
+          <div className="col-md-4">
             <p>6. Desarrollo móbil</p>
             <p>7. Presentación de datos</p>
             <p>8. SEO Marketing</p>
