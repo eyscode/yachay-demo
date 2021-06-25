@@ -30,10 +30,10 @@ export default function Main() {
               Yachay
             </a>
             <ul className="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
-              <li><a className="dropdown-item" href="#">Oferta laboral</a></li>
-              <li><a className="dropdown-item" href="#">Top Skills</a></li>
-              <li><a className="dropdown-item" href="#">Posiciones</a></li>
-              <li><a className="dropdown-item" href="#">Carreras</a></li>
+              <li><Link className="nav-link" to={`${url}job-offers`}>Oferta laboral</Link></li>
+              <li><Link className="nav-link" to={`${url}top-skills`}>Top Skills</Link></li>
+              <li><Link className="nav-link" to={`${url}hard-to-fill-jobs`}>Posiciones</Link></li>
+              <li><Link className="nav-link" to={`${url}careers`}>Carreras</Link></li>
               <li>
                 <hr className="dropdown-divider"/>
               </li>

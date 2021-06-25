@@ -145,7 +145,7 @@ export default function Skills() {
         <h4>Skills mas solicitados</h4>
         <br/>
         <div className="row justify-content-md-center">
-          <div className="col-md-4 offset-1">
+          <div className="col-md-4">
             <p>1. Cloud Computing</p>
             <p>2. Análisis estadístico</p>
             <p>3. Desarrollo web</p>
