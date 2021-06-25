@@ -1,16 +1,22 @@
 import logo from './logo_yachay.png';
 import {Link, Route, Switch, useRouteMatch} from "react-router-dom";
 import Jobs from "./Jobs";
+import Skills from "./Skills";
+import appStore from "./AppStore";
+import {useHistory} from "react-router-dom";
 
 export default function Main() {
   let {path, url} = useRouteMatch();
+  let history = useHistory();
+  const logout = (a) => {
+    appStore.signed = false;
+    history.push("/");
+  };
   return (
     <div className="main">
-      <nav className="py-3 border-bottom sticky-top navbar navbar-dark bg-dark">
+      <nav className="py-3 border-bottom sticky-top navbar navbar-dark bg-color-6">
         <div className="container-fluid">
-          <a href="#"
-             className="navbar-brand d-md-block collapse"
-             id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+          <a className="navbar-brand d-md-block collapse">
             <img src={logo} alt="logo" height={30} className="bi me-2"/>
             Yachay
           </a>
@@ -22,11 +28,9 @@ export default function Main() {
               Yachay
             </a>
             <ul className="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
-              <li><a className="dropdown-item active" href="#" aria-current="page">Dashboard</a></li>
               <li><a className="dropdown-item" href="#">Oferta laboral</a></li>
-              <li><a className="dropdown-item" href="#">Reportes</a></li>
-              <li><a className="dropdown-item" href="#">Posiciones</a></li>
               <li><a className="dropdown-item" href="#">Top Skills</a></li>
+              <li><a className="dropdown-item" href="#">Posiciones</a></li>
               <li><a className="dropdown-item" href="#">Carreras</a></li>
               <li>
                 <hr className="dropdown-divider"/>
@@ -49,7 +53,7 @@ export default function Main() {
                 <li>
                   <hr className="dropdown-divider"/>
                 </li>
-                <li><a className="dropdown-item" href="#">Salir</a></li>
+                <li><a className="dropdown-item" href="#" onClick={logout}>Salir</a></li>
               </ul>
             </div>
           </div>
@@ -60,17 +64,6 @@ export default function Main() {
           <nav id="sidebarMenu" className="col-md-3 col-lg-2 d-md-block bg-light sidebar collapse">
             <div className="position-sticky pt-3">
               <ul className="nav flex-column">
-                <li className="nav-item">
-                  <Link className="nav-link" to={`${url}`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                         className="feather feather-home">
-                      <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                      <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                    </svg>
-                    Dashboard
-                  </Link>
-                </li>
                 <li className="nav-item">
                   <Link className="nav-link" to={`${url}job-offers`}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
@@ -84,14 +77,15 @@ export default function Main() {
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={`${url}reports`}>
+                  <Link className="nav-link" to={`${url}top-skills`}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                          stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                         className="feather feather-file">
-                      <path d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"></path>
-                      <polyline points="13 2 13 9 20 9"></polyline>
+                         className="feather feather-bar-chart-2">
+                      <line x1="18" y1="20" x2="18" y2="10"></line>
+                      <line x1="12" y1="20" x2="12" y2="4"></line>
+                      <line x1="6" y1="20" x2="6" y2="14"></line>
                     </svg>
-                    Reportes
+                    Top Skills
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -105,18 +99,6 @@ export default function Main() {
                       <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
                     </svg>
                     Posiciones
-                  </Link>
-                </li>
-                <li className="nav-item">
-                  <Link className="nav-link" to={`${url}top-skills`}>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                         stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"
-                         className="feather feather-bar-chart-2">
-                      <line x1="18" y1="20" x2="18" y2="10"></line>
-                      <line x1="12" y1="20" x2="12" y2="4"></line>
-                      <line x1="6" y1="20" x2="6" y2="14"></line>
-                    </svg>
-                    Top Skills
                   </Link>
                 </li>
                 <li className="nav-item">
@@ -214,14 +196,11 @@ export default function Main() {
               <Route path={`${path}job-offers`}>
                 <Jobs/>
               </Route>
-              <Route path={`${path}reports`}>
-                <h3>Reportes</h3>
-              </Route>
               <Route path={`${path}hard-to-fill-jobs`}>
                 <h3>Trabajos por cubrir</h3>
               </Route>
               <Route path={`${path}top-skills`}>
-                <h3>Skills</h3>
+                <Skills/>
               </Route>
               <Route path={`${path}careers`}>
                 <h3>Carreras</h3>

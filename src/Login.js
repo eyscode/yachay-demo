@@ -6,7 +6,7 @@ export default function Login(props) {
   let history = useHistory();
   let login = () => {
     appStore.signed = true;
-    history.push("/");
+    history.push("/job-offers");
   };
   return (
     <div className="main form-signin text-center">

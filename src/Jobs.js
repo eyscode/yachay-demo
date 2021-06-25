@@ -1,7 +1,7 @@
 import './Jobs.css';
 import PeruMap from "./PeruMap";
 
-export default function Jobs(props) {
+export default function Jobs() {
   const jobs = [
     ["Desarrollador de software", "10.5"], ["Investigador", "8, 7"], ["Profesor", "7.6"],
     ["Analista de riesgos", "7.0"], ["Gerente de producto", "6.7"], ["Gerente de Marketing", "5.0"],
@@ -13,9 +13,9 @@ export default function Jobs(props) {
   return (
     <div>
       <div className="title">
-        <h2>Análisis General</h2>
+        <h4>Análisis General</h4>
       </div>
-      <hr/>
+      <br/>
       <div className="row jobs-percentages">
         <div className="col-md-4">
           <h3>66%</h3>

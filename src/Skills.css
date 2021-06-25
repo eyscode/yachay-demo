@@ -1,0 +1,16 @@
+.skills-boxes {
+  font-size: .8rem;
+  color: dimgray;
+}
+
+.box {
+  width: .8rem;
+  height: .8rem;
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.text-right {
+  text-align: right;
+  color: dimgray;
+}

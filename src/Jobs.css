@@ -19,3 +19,32 @@
 .title {
   padding-top: 20px;
 }
+
+.progress {
+  height: 2rem;
+}
+
+.bg-color-1 {
+  background-color: #FE115B;
+}
+
+.bg-color-2 {
+  background-color: #D52C88;
+}
+
+.bg-color-3 {
+  background-color: #9B489D;
+}
+
+.bg-color-4 {
+  background-color: #5E5397;
+}
+
+.bg-color-5 {
+  background-color: #33527C;
+}
+
+.bg-color-6 {
+  background-color: #2F4858;
+}
+
