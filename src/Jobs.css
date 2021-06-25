@@ -1,0 +1,21 @@
+.jobs-percentages {
+  margin-top: 20px;
+}
+
+.jobs-percentages > div {
+  border-right: 1px solid lightgray;
+}
+
+.jobs-percentages > div:last-child {
+  border-right: none;
+}
+
+@media (max-width: 767px) {
+  .e-md-block {
+    display: block !important;
+  }
+}
+
+.title {
+  padding-top: 20px;
+}
