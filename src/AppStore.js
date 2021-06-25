@@ -1,5 +1,5 @@
 class AppStore {
-  signed = true
+  signed = false
 }
 
 export default new AppStore();
