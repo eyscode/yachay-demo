@@ -13,7 +13,7 @@ import Main from "./Main";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="https://eyscode.github.io/yachay-demo/">
       <Switch>
         <Route path="/login">
           <Login/>
