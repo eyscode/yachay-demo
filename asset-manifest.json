@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/yachay-demo/static/css/main.5e2d9122.chunk.css",
+    "main.js": "/yachay-demo/static/js/main.3d752038.chunk.js",
+    "main.js.map": "/yachay-demo/static/js/main.3d752038.chunk.js.map",
+    "runtime-main.js": "/yachay-demo/static/js/runtime-main.d0b55c0a.js",
+    "runtime-main.js.map": "/yachay-demo/static/js/runtime-main.d0b55c0a.js.map",
+    "static/css/2.a864d42d.chunk.css": "/yachay-demo/static/css/2.a864d42d.chunk.css",
+    "static/js/2.4b583648.chunk.js": "/yachay-demo/static/js/2.4b583648.chunk.js",
+    "static/js/2.4b583648.chunk.js.map": "/yachay-demo/static/js/2.4b583648.chunk.js.map",
+    "static/js/3.7d538379.chunk.js": "/yachay-demo/static/js/3.7d538379.chunk.js",
+    "static/js/3.7d538379.chunk.js.map": "/yachay-demo/static/js/3.7d538379.chunk.js.map",
+    "index.html": "/yachay-demo/index.html",
+    "static/css/2.a864d42d.chunk.css.map": "/yachay-demo/static/css/2.a864d42d.chunk.css.map",
+    "static/css/main.5e2d9122.chunk.css.map": "/yachay-demo/static/css/main.5e2d9122.chunk.css.map",
+    "static/js/2.4b583648.chunk.js.LICENSE.txt": "/yachay-demo/static/js/2.4b583648.chunk.js.LICENSE.txt",
+    "static/media/logo_yachay.d81f15a0.png": "/yachay-demo/static/media/logo_yachay.d81f15a0.png",
+    "static/media/index.css": "/yachay-demo/static/media/transparent-textures-pattern-wallpaper-png-512_512.2efcb547.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d0b55c0a.js",
+    "static/css/2.a864d42d.chunk.css",
+    "static/js/2.4b583648.chunk.js",
+    "static/css/main.5e2d9122.chunk.css",
+    "static/js/main.3d752038.chunk.js"
+  ]
+}
