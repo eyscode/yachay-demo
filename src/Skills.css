@@ -14,3 +14,9 @@
   text-align: right;
   color: dimgray;
 }
+
+.job-dropdown {
+  display: inline-block !important;
+  width: 300px !important;
+  margin-left: 20px;
+}

@@ -87,7 +87,7 @@ export default function Main() {
                       <line x1="12" y1="20" x2="12" y2="4"></line>
                       <line x1="6" y1="20" x2="6" y2="14"></line>
                     </svg>
-                    Top Skills
+                    Calificaciones Requeridas
                   </Link>
                 </li>
                 <li className="nav-item">

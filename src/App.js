@@ -10,6 +10,7 @@ import 'bootstrap/dist/css/bootstrap.css';
 import '@popperjs/core';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Main from "./Main";
+import 'semantic-ui-css/semantic.min.css'
 
 export default function App() {
   return (

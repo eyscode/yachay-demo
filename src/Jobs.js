@@ -3,7 +3,7 @@ import PeruMap from "./PeruMap";
 
 export default function Jobs() {
   const jobs = [
-    ["Desarrollador de software", "10.5"], ["Investigador", "8, 7"], ["Profesor", "7.6"],
+    ["Desarrollador de software", "10.5"], ["Investigador", "8, 7"], ["Analista de seguridad", "7.6"],
     ["Analista de riesgos", "7.0"], ["Gerente de producto", "6.7"], ["Gerente de Marketing", "5.0"],
     ["CEO", "4.0"], ["Instructor", "3.2"], ["Gerente de ventas", "2.9"], ["Ingeniero sonido", "1.0"],
     ["Desarrollador de software", "10.5"], ["Investigador", "8, 7"], ["Profesor", "7.6"],

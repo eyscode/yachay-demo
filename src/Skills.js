@@ -1,158 +1,70 @@
+import React from 'react'
+import { Dropdown } from 'semantic-ui-react'
 import './Skills.css';
+
+
+const jobOptions = [
+  { key: 'af', value: 'af', text: 'Desarrollador de software' },
+  { key: 'ax', value: 'ax', text: 'Investigador' },
+  { key: 'al', value: 'al', text: 'Analista de seguridad' },
+  { key: 'dz', value: 'dz', text: 'Analista de riesgos' },
+  { key: 'as', value: 'as', text: 'Gerente de producto' },
+  { key: 'ad', value: 'ad', text: 'Gerente de Marketing' },
+  { key: 'ao', value: 'ao', text: 'Gerente de ventas' },
+  { key: 'ai', value: 'ai', text: 'Ingeniero sonido' }
+]
 
 export default function Skills() {
   return (
     <div>
       <div className="title">
-        <h4>Principales prioridades en las carreras</h4>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Salario
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-2" role="progressbar" style={{width: "32%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>32%</span>
-              </div>
-              <div className="progress-bar bg-color-3" role="progressbar" style={{width: "22%"}} aria-valuenow="30"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>22%</span>
-              </div>
-              <div className="progress-bar bg-color-4" role="progressbar" style={{width: "46%"}} aria-valuenow="20"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>46%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Estabilidad Laboral
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-2" role="progressbar" style={{width: "23%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>23%</span>
-              </div>
-              <div className="progress-bar bg-color-3" role="progressbar" style={{width: "43%"}} aria-valuenow="30"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>43%</span>
-              </div>
-              <div className="progress-bar bg-color-4" role="progressbar" style={{width: "34%"}} aria-valuenow="20"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>34%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Opciones Laborales
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-2" role="progressbar" style={{width: "51%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>51%</span>
-              </div>
-              <div className="progress-bar bg-color-3" role="progressbar" style={{width: "29%"}} aria-valuenow="30"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>29%</span>
-              </div>
-              <div className="progress-bar bg-color-4" role="progressbar" style={{width: "20%"}} aria-valuenow="20"
-                   aria-valuemin="0" aria-valuemax="100">
-                <span>20%</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="row justify-content-md-center skills-boxes">
-          <div className="col-md-2">
-            <div className="box bg-color-2"></div>
-            <span>Primer puesto</span>
-          </div>
-          <div className="col-md-2">
-            <div className="box bg-color-3"></div>
-            <span>Segundo puesto</span>
-          </div>
-          <div className="col-md-2">
-            <div className="box bg-color-4"></div>
-            <span>Tercer puesto</span>
-          </div>
-        </div>
+        <h4>
+          Top calificaciones requeridas para
+          <Dropdown
+            defaultSearchQuery="Desarrollador de software"
+            className="job-dropdown"
+            placeholder='Seleccionar profesión'
+            fluid
+            search
+            selection
+            options={jobOptions}
+          />
+        </h4>
       </div>
       <hr/>
       <div className="title">
-        <h4>Tipo de carrera</h4>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Industria
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-5" role="progressbar" style={{width: "60%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>147</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Ambiente de trabajo
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-5" role="progressbar" style={{width: "43%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>113</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-        <div className="row">
-          <div className="col-md-3 text-right">
-            Posición Laboral
-          </div>
-          <div className="col-md-8">
-            <div className="progress">
-              <div className="progress-bar bg-color-5" role="progressbar" style={{width: "80%"}} aria-valuenow="15"
-                   aria-valuemin="0"
-                   aria-valuemax="100">
-                <span>178</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <br/>
-      </div>
-      <hr/>
-      <div className="title">
-        <h4>Skills mas solicitados</h4>
+        <h4>Certificaciones</h4>
         <br/>
         <div className="row justify-content-md-center">
-          <div className="col-md-4">
+          <div className="col-md-5">
+            <p>1. Amazon Web Services (AWS) Certified Developer - Associate</p>
+            <p>2. Associate Software Developer Certification</p>
+            <p>3. Certified Secure Software Lifecycle Professional</p>
+            <p>4. Certified Software Engineer (CSE)</p>
+            <p>5. CIW Web Development Professional</p>
+          </div>
+          <div className="col-md-5">
+            <p>6. Microsoft Technology Associate - HTML5 App Development Fundamentals</p>
+            <p>7. Microsoft Technology Associate - Software Development Fundamentals</p>
+            <p>8. Oracle Application Express 18: Developer Certified Professional</p>
+            <p>9. Professional Software Developer Certification</p>
+            <p>10. Professional Software Engineering Master Certification</p>
+          </div>
+        </div>
+      </div>
+      <hr/>
+      <div className="title">
+        <h4>Skills</h4>
+        <br/>
+        <div className="row justify-content-md-center">
+          <div className="col-md-5">
             <p>1. Cloud Computing</p>
             <p>2. Análisis estadístico</p>
             <p>3. Desarrollo web</p>
             <p>4. Diseño de Interfaces de usuario</p>
             <p>5. Seguridad de la información</p>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-5">
             <p>6. Desarrollo móbil</p>
             <p>7. Presentación de datos</p>
             <p>8. SEO Marketing</p>
