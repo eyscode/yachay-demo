@@ -85,3 +85,10 @@ header {
   margin-right: 10px;
   color: #727272;
 }
+
+.title-dropdown {
+  display: inline-block !important;
+  width: 300px !important;
+  margin-left: 20px;
+  vertical-align: middle;
+}

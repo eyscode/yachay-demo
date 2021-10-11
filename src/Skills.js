@@ -22,7 +22,7 @@ export default function Skills() {
           Top calificaciones requeridas para
           <Dropdown
             defaultSearchQuery="Desarrollador de software"
-            className="job-dropdown"
+            className="title-dropdown"
             placeholder='Seleccionar profesión'
             fluid
             search
