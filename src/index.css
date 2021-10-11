@@ -92,3 +92,8 @@ header {
   margin-left: 20px;
   vertical-align: middle;
 }
+
+.svg-map {
+  width: 70% !important;
+  padding-left: 50px;
+}

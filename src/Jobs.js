@@ -80,10 +80,10 @@ export default function Jobs() {
                 {jobs.map((item, index) => {
                   return (
                     <tr key={index}>
-                      <td style={{fontSize: 12}}>{index + 1}</td>
+                      <td scope="row" style={{fontSize: 12}}>{index + 1}</td>
                       <td scope="row">{item[0]}</td>
-                      <td>{item[1]}</td>
-                      <td>{item[2]}</td>
+                      <td scope="row">{item[1]}</td>
+                      <td scope="row">{item[2]}</td>
                     </tr>
                   )
                 })}
