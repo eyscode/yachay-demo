@@ -26,7 +26,6 @@ export default function Main() {
                className="navbar-brand d-flex align-items-center col-lg-4 mb-lg-0 text-decoration-none dropdown-toggle"
                id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
               <img src={logo} alt="logo" height={30} className="bi me-2"/>
-              Yachay
             </a>
             <ul className="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
               <li><Link className="nav-link" to={`${url}job-offers`}>Oferta laboral</Link></li>

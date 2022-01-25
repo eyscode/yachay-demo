@@ -89,11 +89,15 @@ header {
 .title-dropdown {
   display: inline-block !important;
   width: 300px !important;
-  margin-left: 20px;
   vertical-align: middle;
+  margin: 20px 0 20px 20px;
 }
 
 .svg-map {
   width: 70% !important;
   padding-left: 50px;
+}
+
+.jobs-percentages .col-md-4 {
+  margin-bottom: 20px;
 }
