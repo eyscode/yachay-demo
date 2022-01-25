@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/yachay-demo/static/css/main.aa91da4f.chunk.css",
-    "main.js": "/yachay-demo/static/js/main.9c3b5150.chunk.js",
-    "main.js.map": "/yachay-demo/static/js/main.9c3b5150.chunk.js.map",
+    "main.js": "/yachay-demo/static/js/main.fef25af0.chunk.js",
+    "main.js.map": "/yachay-demo/static/js/main.fef25af0.chunk.js.map",
     "runtime-main.js": "/yachay-demo/static/js/runtime-main.4d120522.js",
     "runtime-main.js.map": "/yachay-demo/static/js/runtime-main.4d120522.js.map",
     "static/css/2.2f6ebc3f.chunk.css": "/yachay-demo/static/css/2.2f6ebc3f.chunk.css",
@@ -24,6 +24,6 @@
     "static/css/2.2f6ebc3f.chunk.css",
     "static/js/2.eb40c08a.chunk.js",
     "static/css/main.aa91da4f.chunk.css",
-    "static/js/main.9c3b5150.chunk.js"
+    "static/js/main.fef25af0.chunk.js"
   ]
 }
