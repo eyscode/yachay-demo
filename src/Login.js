@@ -12,7 +12,7 @@ export default function Login(props) {
     <div className="main form-signin text-center">
       <form>
         <img className="mb-4" src={logo} alt="" height="100"/>
-          <h1 className="h3 mb-3 fw-normal">Análitica del mercado laboral en tiempo real</h1>
+          <h1 className="h3 mb-3 fw-normal">Analítica del mercado laboral en tiempo real</h1>
 
           <div className="form-floating">
             <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
