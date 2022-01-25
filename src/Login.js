@@ -1,4 +1,4 @@
-import logo from './logo_yachay.png';
+import logo from './new_logo.png';
 import appStore from "./AppStore";
 import {useHistory} from "react-router-dom";
 
@@ -11,8 +11,8 @@ export default function Login(props) {
   return (
     <div className="main form-signin text-center">
       <form>
-        <img className="mb-4" src={logo} alt="" height="57"/>
-          <h1 className="h3 mb-3 fw-normal">Yachay Data</h1>
+        <img className="mb-4" src={logo} alt="" height="100"/>
+          <h1 className="h3 mb-3 fw-normal">Análitica del mercado laboral en tiempo real</h1>
 
           <div className="form-floating">
             <input type="email" className="form-control" id="floatingInput" placeholder="name@example.com"/>
@@ -29,7 +29,7 @@ export default function Login(props) {
             </label>
           </div>
           <button className="w-100 btn btn-lg btn-primary" type="submit" onClick={login}>Entrar</button>
-          <p className="mt-5 mb-3 text-muted">© 2020–2021</p>
+          <p className="mt-5 mb-3 text-muted">© 2020–2022</p>
       </form>
     </div>
   );
