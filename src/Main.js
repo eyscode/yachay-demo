@@ -19,7 +19,7 @@ export default function Main() {
       <nav className="py-3 border-bottom sticky-top navbar navbar-dark bg-color-6">
         <div className="container-fluid">
           <a className="navbar-brand d-md-block collapse">
-            <img src={logo} alt="logo" height={40} className="bi me-2"/>
+            <img src={logo} alt="logo" height={30} className="bi me-2"/>
           </a>
           <div className="dropdown e-md-block collapse">
             <a href="#"
